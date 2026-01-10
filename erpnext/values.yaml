@@ -436,7 +436,7 @@ mariadb-sts:
     pullPolicy: IfNotPresent
   rootPassword: "changeit"
   persistence:
-    storageClass: "azurefile-csi"
+    storageClass: "managed-premium"
     size: 8Gi
 
  
