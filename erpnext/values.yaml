@@ -502,9 +502,13 @@ postgresql-sts:
   postgresUser: "postgres"
   postgresPassword: "changeit"
   persistence:
-    # storageClass: "nfs"
+  worker:
+    enabled: true
+    storageClass: azurefile-csi
     size: 8Gi
-  resources: {}
+    accessModes:
+    - ReadWriteMany
+
 
 redis-cache:
   # To enable the classic Bitnami Redis subchart for cache, set enabled to true
@@ -523,3 +527,4 @@ redis-queue:
     repository: bitnamilegacy/redis
     tag: "7.0"
   # Values passed to the bitnami/redis subchart can be defined here.
+
