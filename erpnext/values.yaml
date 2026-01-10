@@ -275,11 +275,11 @@ socketio:
 persistence:
   worker:
     enabled: true
-    # existingClaim: ""
+    storageClass: azurefile-csi
     size: 8Gi
-    # storageClass: "nfs"
     accessModes:
     - ReadWriteMany
+
   logs:
     # Container based log search and analytics stack recommended
     enabled: false
