@@ -350,7 +350,7 @@ jobs:
   createSite:
     # jobName: ""
     enabled: true
-    siteName: "erp.cluster.local"
+    siteName: "localhost"
     adminPassword: "changeit"
     adminExistingSecret: ""
     adminExistingSecretKey: "password"
