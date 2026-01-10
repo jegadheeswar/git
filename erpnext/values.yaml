@@ -429,7 +429,7 @@ securityContext:
   # runAsUser: 1000
 
 mariadb-sts:
-  enabled: false
+  enabled: true
   image:
     repository: mariadb
     tag: "10.6"
