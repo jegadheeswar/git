@@ -349,14 +349,13 @@ jobs:
 
   createSite:
     # jobName: ""
-    enabled: false
-    forceCreate: false
+    enabled: true
     siteName: "erp.cluster.local"
     adminPassword: "changeit"
     adminExistingSecret: ""
     adminExistingSecretKey: "password"
     installApps:
-    - "erpnext"
+    - erpnext
     dbType: "mariadb"
     backoffLimit: 0
     resources: {}
