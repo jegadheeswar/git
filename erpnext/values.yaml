@@ -436,8 +436,10 @@ mariadb-sts:
     pullPolicy: IfNotPresent
   rootPassword: "changeit"
   persistence:
-    # storageClass: "nfs"
+    storageClass: "azurefile-csi"
     size: 8Gi
+
+ 
   resources: {}
   myCnf: |
     [mysqld]
